@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginbg"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".login"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:translationZ="10dp"
+
+        >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_background"
+                app:tint="@color/green_300"
+                android:layout_gravity="center"
+
+                />
+            <!--or without childView-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Welcome to BARCODE"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/tv_Signintocontinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Signintocontinue"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/blue_grey_300" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernamelay"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:startIconDrawable="@drawable/person"
+            app:helperText=""
+            app:helperTextTextColor="@color/RED"
+            app:errorTextColor="@color/RED"
+            app:boxStrokeErrorColor="@color/RED"
+            android:layout_marginTop="20dp"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic__email"
+            app:boxBackgroundColor="@color/white"
+            app:suffixText="\@gmail.com">
+
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:inputType="text"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordil"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/Password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:startIconDrawable="@drawable/password"
+
+            app:helperText=""
+            app:helperTextTextColor="@color/RED"
+            app:errorTextColor="@color/RED"
+            app:boxStrokeErrorColor="@color/RED"
+            android:layout_marginTop="20dp"
+            app:endIconMode="password_toggle"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/GREEN"
+            app:boxStrokeColor="@color/GREEN"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:inputType="textPassword"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/forgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgetpasswoed"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                android:textColor="@color/blue_grey_400"
+                android:layout_marginTop="15dp"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="45dp" />
+
+
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:background="@drawable/btn_rounded_green_300"
+            android:elevation="20dp"
+            android:shadowColor="#1FC356"
+            android:layout_marginTop="10dp"
+            android:text="@string/signin"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:id="@+id/sign_up_for_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_newuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newuser"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                android:textColor="@color/blue_grey_400"
+                android:layout_marginTop="15dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_SignUp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SignUp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                android:textColor="@color/green_300"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity= "bottom"
+        android:layoutDirection="rtl"
+        android:layout_marginBottom="2dp"
+        >
+        <TextView
+            android:id="@+id/tv_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="English"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/blue_grey_300"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/tv_arabic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="اللغة العربية"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/blue_grey_300"
+            android:textSize="12sp"
+            android:layout_marginStart="20dp"
+
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/language"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="120dp"
+            />
+    </LinearLayout>
+
+</FrameLayout>

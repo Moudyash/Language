@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Language</string>
+    <string name="Username">اسم المستخدم</string>
+    <string name="Password">كلمة المرور</string>
+    <string name="forgetpasswoed">نسيت كلمة المرور</string>
+    <string name="signin">تـسـجـيـل الـدخـول</string>
+    <string name="newuser">مستخدم جديد؟</string>
+    <string name="SignUp">تسجيل</string>
+    <string name="Signintocontinue">تسجيل الدخول للاستمرار</string>
+    <string name="email">ايميل</string>
+</resources>
